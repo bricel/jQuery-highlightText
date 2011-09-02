@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+	<head>
+		<title>jQuery highlightText Demo</title>
+		<style>
+			.highlight {
+				background-color: yellow;
+			}
+		</style>
+		<script src="http://code.jquery.com/jquery-latest.js"></script>
+		<script src="../jquery.highlighttext.js"></script>
+		<script>
+			$(document).ready(function(){
+				var strInput = $("#strInput");
+				$("#replace").click(function(){
+					var str = strInput.val();
+					$(".content").highlightText(str);
+				});
+				$("#reset").click(function(){
+					window.location.href = window.location.href;
+				});
+			});
+		</script>
+	</head>
+	<body>
+		String to replace:<br/>
+		<input type="text" id="strInput" /><br/>
+		<button id="replace">Replace</button>
+		<button id="reset">Reset</button><br /><hr />
+		
+		A div containing paragraphs of text:<br/>
+		<div class="content">
+<p>Turpis lectus, odio pulvinar ut ut dictumst pulvinar dictumst rhoncus ut, enim, sit et dolor ultricies ac sit cum mid adipiscing nunc nascetur velit, sed egestas. Parturient sed, dolor montes nunc dignissim et ac enim, vel urna lectus, sociis porta, ut dignissim? Et aenean nisi. Porttitor a pellentesque lectus tristique habitasse! Ac, dapibus habitasse tempor urna! In vut, porttitor ultrices. Arcu ultrices ut! Adipiscing ultricies cursus in non odio, nunc mus? Rhoncus pid phasellus nunc. Mattis urna. Et risus! Cum dis placerat nisi elementum. Placerat, ac turpis turpis pid sit, porta purus lorem facilisis egestas pellentesque, eros cras odio integer, a scelerisque dis turpis quis nunc mattis velit egestas. Dis purus porttitor, urna et massa? Elementum! Odio, enim in et.</p>
+
+<p>Aliquet porttitor vel vel in. Ac, cras rhoncus et? Phasellus mid tristique rhoncus turpis sit sit! Turpis! Magna in? Platea. Amet augue placerat, augue est ultricies! Diam elit hac lacus porttitor mattis porta a sit et vut lorem, natoque, augue urna? Diam integer turpis! Lectus sit augue mauris mid auctor. Tempor? Etiam turpis integer odio, egestas augue hac egestas! Et mus mattis pulvinar, non egestas magna egestas cursus platea proin tincidunt, pid turpis enim duis. Ultricies, tincidunt sociis aliquam sed ridiculus purus amet facilisis facilisis, hac lundium! Quis! Mid, ultrices cras placerat urna rhoncus aliquam sed pulvinar, elementum magna facilisis mauris sit egestas a duis sit urna, elementum augue? Lorem aliquam ut turpis et pulvinar elementum in! Et odio.</p>
+
+<p>Lorem! A! Dapibus, rhoncus, facilisis cras tristique magna porta urna egestas, augue sagittis eu, eros ultricies ac lectus duis! Risus dictumst amet dolor! Aliquam urna, sit sagittis, enim porta, et purus nunc? Ridiculus habitasse quis rhoncus ridiculus lundium adipiscing. Proin tempor? Egestas eu arcu purus hac, arcu eros, arcu scelerisque nascetur a dis! Pellentesque a phasellus! Est ut turpis, sed nisi magna, nisi urna cursus integer a enim lectus placerat integer integer risus? Auctor. Odio lacus proin arcu cum lectus pulvinar pulvinar pulvinar. Cum! A quis habitasse placerat cum, montes dapibus? Ac eros mauris magna a mus est porttitor! Cursus montes facilisis auctor. Rhoncus pid, dis amet mattis penatibus placerat turpis ut platea dignissim, eros dolor, odio velit placerat.</p>
+
+<p>Ac montes, integer, duis arcu, massa lectus purus? Aliquet, elementum habitasse? Dignissim ridiculus? Tempor diam! Vel? Risus! Sagittis aliquet, mid eu phasellus natoque magna? Vel et elementum, nisi arcu et? Cum, vel dis egestas et, placerat sed pellentesque velit mattis. Integer auctor tortor amet dapibus, odio magnis, cum ultrices ridiculus scelerisque sit ridiculus, dolor? Habitasse eros et, in penatibus, turpis platea sed nunc? Et magnis diam proin, turpis velit turpis augue odio in et et? Egestas natoque tincidunt ac? Eros! Mus est rhoncus, mauris tortor, porta dictumst magna diam, purus pid purus, ut elementum elementum ac tortor sit scelerisque odio? Montes parturient pellentesque amet scelerisque mus urna, velit vut? Ac enim, turpis turpis? Est tortor, ridiculus enim duis, vel.</p>
+		</div>
+		A table containing table rows and cells with text:<br/>
+<table class="content">
+	<tr>
+		<td><p>Turpis lectus, odio pulvinar ut ut dictumst pulvinar dictumst rhoncus ut, enim, sit et dolor ultricies ac sit cum mid adipiscing nunc nascetur velit, sed egestas. Parturient sed, dolor montes nunc dignissim et ac enim, vel urna lectus, sociis porta, ut dignissim? Et aenean nisi. Porttitor a pellentesque lectus tristique habitasse! Ac, dapibus habitasse tempor urna! In vut, porttitor ultrices. Arcu ultrices ut! Adipiscing ultricies cursus in non odio, nunc mus? Rhoncus pid phasellus nunc. Mattis urna. Et risus! Cum dis placerat nisi elementum. Placerat, ac turpis turpis pid sit, porta purus lorem facilisis egestas pellentesque, eros cras odio integer, a scelerisque dis turpis quis nunc mattis velit egestas. Dis purus porttitor, urna et massa? Elementum! Odio, enim in et.</p></td>
+		<td><p>Aliquet porttitor vel vel in. Ac, cras rhoncus et? Phasellus mid tristique rhoncus turpis sit sit! Turpis! Magna in? Platea. Amet augue placerat, augue est ultricies! Diam elit hac lacus porttitor mattis porta a sit et vut lorem, natoque, augue urna? Diam integer turpis! Lectus sit augue mauris mid auctor. Tempor? Etiam turpis integer odio, egestas augue hac egestas! Et mus mattis pulvinar, non egestas magna egestas cursus platea proin tincidunt, pid turpis enim duis. Ultricies, tincidunt sociis aliquam sed ridiculus purus amet facilisis facilisis, hac lundium! Quis! Mid, ultrices cras placerat urna rhoncus aliquam sed pulvinar, elementum magna facilisis mauris sit egestas a duis sit urna, elementum augue? Lorem aliquam ut turpis et pulvinar elementum in! Et odio.</p></td>
+	</tr>
+	<tr>
+		<td><p>Lorem! A! Dapibus, rhoncus, facilisis cras tristique magna porta urna egestas, augue sagittis eu, eros ultricies ac lectus duis! Risus dictumst amet dolor! Aliquam urna, sit sagittis, enim porta, et purus nunc? Ridiculus habitasse quis rhoncus ridiculus lundium adipiscing. Proin tempor? Egestas eu arcu purus hac, arcu eros, arcu scelerisque nascetur a dis! Pellentesque a phasellus! Est ut turpis, sed nisi magna, nisi urna cursus integer a enim lectus placerat integer integer risus? Auctor. Odio lacus proin arcu cum lectus pulvinar pulvinar pulvinar. Cum! A quis habitasse placerat cum, montes dapibus? Ac eros mauris magna a mus est porttitor! Cursus montes facilisis auctor. Rhoncus pid, dis amet mattis penatibus placerat turpis ut platea dignissim, eros dolor, odio velit placerat.</p></td>
+		<td><p>Ac montes, integer, duis arcu, massa lectus purus? Aliquet, elementum habitasse? Dignissim ridiculus? Tempor diam! Vel? Risus! Sagittis aliquet, mid eu phasellus natoque magna? Vel et elementum, nisi arcu et? Cum, vel dis egestas et, placerat sed pellentesque velit mattis. Integer auctor tortor amet dapibus, odio magnis, cum ultrices ridiculus scelerisque sit ridiculus, dolor? Habitasse eros et, in penatibus, turpis platea sed nunc? Et magnis diam proin, turpis velit turpis augue odio in et et? Egestas natoque tincidunt ac? Eros! Mus est rhoncus, mauris tortor, porta dictumst magna diam, purus pid purus, ut elementum elementum ac tortor sit scelerisque odio? Montes parturient pellentesque amet scelerisque mus urna, velit vut? Ac enim, turpis turpis? Est tortor, ridiculus enim duis, vel.</p></td>
+	</tr>
+</table>
+	</body>
+</html>
