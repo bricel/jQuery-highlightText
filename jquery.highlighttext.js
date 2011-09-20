@@ -84,7 +84,7 @@
 		if ( arguments[2] && reStr ) {
 			reStr = reStr = "\\b" + reStr + "\\b";
 		} 
-		console.log(reStr);
+
 		// if re is not defined ( which means either an array or
 		// string was passed as the first parameter ) create the
 		// regular expression.
