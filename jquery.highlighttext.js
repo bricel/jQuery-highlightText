@@ -95,7 +95,7 @@
 	    // iterate through each matched element
 	    return this.each( function() {
 	        // select all contents of this element
-	        $( this ).add( $( this ).find( "*" ) ).contents()
+	        $( this ).find( "*" ).andSelf().contents()
 	        
 	        // filter to only text nodes that aren't already highlighted
 	        .filter( function () {
